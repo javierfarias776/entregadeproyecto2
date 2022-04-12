@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+
+
+.navg a{
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 15px;
+    padding: 10px 15px;
+    text-align: start;
+    text-transform: uppercase;
+
+}
+
+.navg:hover{
+    color: black;
+}
+    
+
+
+body{
+    background: black;
+}
+#botonera{
+    background: orange;
+}
+   #botonera img[src="./logo/logo-anaranjado.jpg"]{
+       width: 200px;
+       height: 180px;
+       
+   }
+   
+
+
+.btn-color{
+    background-color: orange;
+}
+.btn-color:hover{
+    color:white ;
+    font-weight: 500;
+
+}
+@media (min-width: 280) and (max-width:395px){
+    #botonera img[src="./logo/logo-anaranjado.jpg"]{
+        width: 100px;
+    
+}
+}
+
+h1,h2,h3{
+    color: gray;
+}
+
+.text{
+    color: white;
+}
+p{
+    font-size: 1rem;
+}
+
+/*animacion al menu*/
+
+.link:before{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s;
+}
+.slider_left:before{
+    left:0;
+}
+.slider_right:before{
+    right:0;
+}
+
+.link:hover:before{
+    width: 100%;
+
+
+}
+
+/*columnas de promociones*/
+
+
+.contenedor{
+    background: whitesmoke;
+    width: none;
+    max-width: 900px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.tabla {
+    width: 33%;
+    height: 600px;
+    margin: auto;
+    border:1px solid black;
+    border-radius: 4px;
+    padding: 90px;
+    text-align: center;
+    flex-grow: 1;
+    color: black;
+}
+.tabla > h2{
+    display: inline-block;
+    margin-bottom: 35px;
+
+
+}
+
+.tabla img{
+    width: 50px;
+    margin-bottom: 35px;
+}
+
+.tabla > h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.tabla > p{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+ .bottom{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: orange;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+.tabla:hover{
+    background: black;
+    color: orange;
+    transition: 1s all;
+    transform:scale(1.1);
+    cursor: pointer;
+
+}
+
+.bottom:hover{
+    background: orange;
+    color: black;
+    transition: 0.7s all;
+    transform:scale(1.3);
+    cursor: pointer;
+
+}
